@@ -1,0 +1,12 @@
+.die-selector-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .selector {
+    $padding-selector: 5em;
+
+    padding-right: $padding-selector;
+    padding-left: $padding-selector;
+  }
+}
