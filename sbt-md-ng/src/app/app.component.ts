@@ -8,5 +8,5 @@ import { MaterialModule } from './material/material.module';
   providers: [MaterialModule]
 })
 export class AppComponent {
-  title = 'app';
+
 }
