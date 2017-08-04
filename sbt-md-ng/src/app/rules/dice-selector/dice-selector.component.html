@@ -1,0 +1,19 @@
+<md-card>
+  <md-card-title-group>
+    <md-card-title>Slagforklaring</md-card-title>
+  </md-card-title-group>
+  <md-card-content>
+    <p>Første terning:&nbsp;{{4}}</p>
+    <md-radio-group class="example-radio-group">
+      <md-radio-button class="example-radio-button" *ngFor="let number of numbers" [value]="number">
+        {{number}}&nbsp;&nbsp;
+      </md-radio-button>
+    </md-radio-group>
+    <p>Anden terning:&nbsp;{{5}}</p>
+    <md-radio-group>
+      <md-radio-button class="example-radio-button" *ngFor="let number of numbers" [value]="number">
+        {{number}}&nbsp;&nbsp;
+      </md-radio-button>
+    </md-radio-group>
+  </md-card-content>
+</md-card>
