@@ -1,5 +1,17 @@
 <md-toolbar color="primary">
-  <a>Hello</a>
+  {{gameTitle}}
 </md-toolbar>
+
+<md-tab-group>
+  <md-tab label="Før start">
+    <app-game></app-game>
+  </md-tab>
+  <md-tab label="Terningslag">
+    <app-rules></app-rules>
+  </md-tab>
+  <md-tab label="Oprindelsen">
+    <app-about></app-about>
+  </md-tab>
+</md-tab-group>
 
 <router-outlet></router-outlet>

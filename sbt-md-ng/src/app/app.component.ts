@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MaterialModule } from './material/material.module';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,5 @@ import { MaterialModule } from './material/material.module';
   providers: [MaterialModule]
 })
 export class AppComponent {
-
+  gameTitle: string = environment.gameTitle;
 }
