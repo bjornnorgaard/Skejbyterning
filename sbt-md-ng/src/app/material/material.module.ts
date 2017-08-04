@@ -8,12 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     MdButtonModule,
     MdCheckboxModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   exports: [
     MdButtonModule,
     MdCheckboxModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   declarations: []
 })
