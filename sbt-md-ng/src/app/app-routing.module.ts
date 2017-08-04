@@ -9,6 +9,7 @@ const routes: Routes = [
   {path: 'game', component: GameComponent},
   {path: 'rules', component: RulesComponent},
   {path: 'about', component: AboutComponent},
+  {path: '**', component: GameComponent},
 ];
 
 @NgModule({
