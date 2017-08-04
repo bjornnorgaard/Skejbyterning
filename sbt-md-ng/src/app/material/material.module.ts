@@ -1,19 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MdButtonModule, MdCheckboxModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdButtonModule, MdCheckboxModule, MdToolbarModule } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     MdButtonModule,
     MdCheckboxModule,
-    BrowserAnimationsModule,
+    MdToolbarModule,
   ],
   exports: [
     MdButtonModule,
     MdCheckboxModule,
-    BrowserAnimationsModule,
+    MdToolbarModule,
   ],
   declarations: []
 })
