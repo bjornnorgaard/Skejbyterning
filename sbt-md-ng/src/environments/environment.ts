@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  gameTitle: 'Skejbyterning',
+  gameTitle: 'Skejbyterninger',
 };
