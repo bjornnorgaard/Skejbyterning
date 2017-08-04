@@ -7,7 +7,7 @@
 //@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
 $margin-side: 1em;
-$margin-top: 1em;
+$margin-top: 4.5em;
 
 body {
   margin: 0;
@@ -16,4 +16,8 @@ body {
 
 .content {
   margin: $margin-top $margin-side $margin-side;
+}
+
+.example-card {
+  margin-bottom: 1em;
 }
