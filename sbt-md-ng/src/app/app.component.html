@@ -1,17 +1,10 @@
 <md-toolbar color="primary">
-  {{gameTitle}}
+  <a md-button routerLink="/game">SKEJBY &nbsp;<i class="fa fa-beer fa-2x" aria-hidden="true"></i></a>
+  <a md-button routerLink="/game">Spillet</a>
+  <a md-button routerLink="/rules">Regler</a>
+  <a md-button routerLink="/about">Om</a>
 </md-toolbar>
 
-<md-tab-group>
-  <md-tab label="Før start">
-    <app-game></app-game>
-  </md-tab>
-  <md-tab label="Terningslag">
-    <app-rules></app-rules>
-  </md-tab>
-  <md-tab label="Oprindelsen">
-    <app-about></app-about>
-  </md-tab>
-</md-tab-group>
-
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
