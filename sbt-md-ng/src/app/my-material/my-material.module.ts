@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MdButtonModule, MdToolbarModule, MdCardModule, MdRadioModule } from '@angular/material';
+import { MdButtonModule, MdToolbarModule, MdCardModule, MdRadioModule, MdListModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MdToolbarModule,
     MdCardModule,
     MdRadioModule,
+    MdListModule,
   ],
   exports: [
     CommonModule,
@@ -19,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MdToolbarModule,
     MdCardModule,
     MdRadioModule,
+    MdListModule,
   ],
   declarations: []
 })

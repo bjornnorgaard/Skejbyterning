@@ -1,17 +1,35 @@
 <div [hidden]="!isOn">
   <md-card>
     <md-card-title-group>
-      <md-card-title>Forklaring af slag</md-card-title>
+
+      <md-card-title>
+        <div *ngIf="die1; then titleThen else titleElse"></div>
+        <ng-template #titleThen>Forklaring af slag: {{die1}} x {{die2}}</ng-template>
+        <ng-template #titleElse>Vælg antal øjne overfor</ng-template>
+      </md-card-title>
+
       <md-card-subtitle>
-        <div *ngIf="rule; then thenBlock else elseBlock">hello</div>
+        <div *ngIf="die1; then thenBlock else elseBlock">hello</div>
         <ng-template #thenBlock>Her vises betydningen</ng-template>
-        <ng-template #elseBlock>Vælg først antal øjne ovenfor</ng-template>
+        <ng-template #elseBlock>Næsten klar, bare vælg antal øjne</ng-template>
       </md-card-subtitle>
+
     </md-card-title-group>
+
     <md-card-content>
-      <p>Her skal der være en form for beskrivelse.
-         Endnu uklart på hvilket format og hvilke felter der bliver nødvendige</p>
+
+      <div *ngIf="die1; then paraThen else paraElse"></div>
+      <ng-template #paraThen>
+        Her skal der være en form for beskrivelse.
+        "Dette slag betyder x, y og z." Endnu uklart på
+        hvilket format og hvilke felter der bliver nødvendige
+      </ng-template>
+      <ng-template #paraElse>
+        Forklaringen kommer her når der er valgt et antal øjne på feltet ovenfor.
+      </ng-template>
+
     </md-card-content>
+
   </md-card>
 </div>
 
