@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class EyeDescriptionComponent {
 
-  isOn = true;
+  isOn = false;
 
   findDiceDescription(selection: string) {
     console.log('Fetching description for : ' + selection);
+    this.isOn = true;
   }
 
 }
