@@ -9,3 +9,12 @@ Sider: "Game" og "About" er klar til content.
 Side: "Rules" er ikke færdig endnu.
 Undersøgt og løst problem med at www ikke virkede som prefix på domæne.
 Undersøgt problem vedrørende 404 på subsite ved refresh, ikke løst.
+
+20170805
+4timer
+RadioGroup til valg af terningslag er lavet og nu kan en beskrivelse
+baseret på tallene vises.
+Mangler in-memory api til at hente beskrivelse for at undgå bloatet .ts fil.
+Indbygget mulighed for at lade nogle kombinationer åbne
+en modal dialog med besked.
+Generelle forbedringer.
