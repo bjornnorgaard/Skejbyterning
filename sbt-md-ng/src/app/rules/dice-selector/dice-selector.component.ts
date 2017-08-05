@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { isUndefined } from 'util';
 
 @Component({
   selector: 'app-dice-selector',
@@ -7,6 +8,33 @@ import { Component } from '@angular/core';
 })
 export class DiceSelectorComponent {
 
-  numbers = [1, 2, 3, 4, 5, 6];
+  public numbers = [1, 2, 3, 4, 5, 6];
+  @Output() onBothDiceSelected = new EventEmitter<string>();
+  private firstDieValue: number;
+  private secondDieValue: number;
+
+  firstDieSelected(value: number) {
+    this.firstDieValue = value;
+    this.diceSelectionUpdated();
+  }
+
+  secondDieSelected(number: number) {
+    this.secondDieValue = number;
+    this.diceSelectionUpdated();
+  }
+
+  private diceSelectionUpdated() {
+    console.log('Dice selected are: ' + this.firstDieValue + ' and ' + this.secondDieValue);
+    if (!isUndefined(this.firstDieValue) && !isUndefined(this.secondDieValue)) {
+      console.log('Both dice are selected');
+      this.sendDiceSelectedEvent();
+    }
+  }
+
+  private sendDiceSelectedEvent() {
+    const selection = this.firstDieValue + '' + this.secondDieValue;
+    console.log('Emitting ' + this.onBothDiceSelected + '-event with ' + selection);
+    this.onBothDiceSelected.emit(selection);
+  }
 
 }

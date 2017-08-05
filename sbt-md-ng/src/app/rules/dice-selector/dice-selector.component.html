@@ -5,14 +5,18 @@
   <md-card-content>
     <p>Første terning:&nbsp;{{4}}</p>
     <md-radio-group class="example-radio-group">
-      <md-radio-button class="example-radio-button" *ngFor="let number of numbers" [value]="number">
-        {{number}}&nbsp;&nbsp;
+      <md-radio-button *ngFor="let number of numbers"
+                       [value]="number"
+                       (click)="firstDieSelected(number)">
+        {{number}}&nbsp;&nbsp;&nbsp;&nbsp;
       </md-radio-button>
     </md-radio-group>
     <p>Anden terning:&nbsp;{{5}}</p>
     <md-radio-group>
-      <md-radio-button class="example-radio-button" *ngFor="let number of numbers" [value]="number">
-        {{number}}&nbsp;&nbsp;
+      <md-radio-button *ngFor="let number of numbers"
+                       [value]="number"
+                       (click)="secondDieSelected(number)">
+        {{number}}&nbsp;&nbsp;&nbsp;&nbsp;
       </md-radio-button>
     </md-radio-group>
   </md-card-content>
