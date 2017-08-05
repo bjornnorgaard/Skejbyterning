@@ -4,7 +4,7 @@
     <md-card-title>Vælg antal øjne</md-card-title>
   </md-card-title-group>
   <md-card-content>
-    <p>Første terning:&nbsp;{{4}}</p>
+    <p>Første terning:&nbsp;{{firstDieValue}}</p>
     <md-radio-group class="example-radio-group">
       <md-radio-button *ngFor="let number of numbers"
                        [value]="number"
@@ -12,7 +12,7 @@
         {{number}}&nbsp;&nbsp;&nbsp;&nbsp;
       </md-radio-button>
     </md-radio-group>
-    <p>Anden terning:&nbsp;{{5}}</p>
+    <p>Anden terning:&nbsp;{{secondDieValue}}</p>
     <md-radio-group>
       <md-radio-button *ngFor="let number of numbers"
                        [value]="number"

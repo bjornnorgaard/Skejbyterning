@@ -9,10 +9,6 @@
   </md-card-content>
 </md-card>
 
-<app-dice-selector></app-dice-selector>
+<app-dice-selector (onBothDiceSelected)="eye.findDiceDescription($event)"></app-dice-selector>
 
-<md-card>
-  <md-card-content>
-    <p>Vi er ikke helt færdige endnu.</p>
-  </md-card-content>
-</md-card>
+<app-eye-description #eye></app-eye-description>

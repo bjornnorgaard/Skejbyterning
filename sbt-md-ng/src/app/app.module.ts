@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import 'hammerjs';
 import { AboutModule } from './about/about.module';
@@ -16,6 +17,7 @@ import { RulesModule } from './rules/rules.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule,
     MyMaterialModule,
     GameModule,
     RulesModule,
