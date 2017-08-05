@@ -3,7 +3,9 @@
 Server- og dom‘neopsætning og basal ng.
 
 20170804
-10timer 40min
+11timer
 Omskrevet til at bruge material design.
 Sider: "Game" og "About" er klar til content.
 Side: "Rules" er ikke færdig endnu.
+Undersøgt og løst problem med at www ikke virkede som prefix på domæne.
+Undersøgt problem vedrørende 404 på subsite ved refresh, ikke løst.

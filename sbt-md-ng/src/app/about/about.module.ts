@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MyMaterialModule } from '../my-material/my-material.module';
 import { AboutComponent } from './about/about.component';
-import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    MaterialModule,
+    MyMaterialModule,
   ],
   declarations: [
     AboutComponent
