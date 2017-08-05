@@ -1,0 +1,17 @@
+<div [hidden]="!isOn">
+  <md-card>
+    <md-card-title-group>
+      <md-card-title>Forklaring af slag</md-card-title>
+      <md-card-subtitle>
+        <div *ngIf="rule; then thenBlock else elseBlock">hello</div>
+        <ng-template #thenBlock>Her vises betydningen</ng-template>
+        <ng-template #elseBlock>Vælg først antal øjne ovenfor</ng-template>
+      </md-card-subtitle>
+    </md-card-title-group>
+    <md-card-content>
+      <p>Her skal der være en form for beskrivelse.
+         Endnu uklart på hvilket format og hvilke felter der bliver nødvendige</p>
+    </md-card-content>
+  </md-card>
+</div>
+
