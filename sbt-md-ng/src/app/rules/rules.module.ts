@@ -5,6 +5,7 @@ import { CounterComponent } from './counter/counter.component';
 import { DiceSelectorComponent } from './dice-selector/dice-selector.component';
 import { EyeDescriptionComponent } from './eye-description/eye-description.component';
 import { RulesComponent } from './rules/rules.component';
+import { DialogComponent } from './src/app/rules/dialog/dialog.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { RulesComponent } from './rules/rules.component';
     DiceSelectorComponent,
     EyeDescriptionComponent,
     CounterComponent,
+    DialogComponent,
   ],
   exports: [
     RulesComponent,
