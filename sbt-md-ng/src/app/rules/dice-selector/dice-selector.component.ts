@@ -8,8 +8,8 @@ import { isUndefined } from 'util';
 })
 export class DiceSelectorComponent {
 
-  public numbers = [1, 2, 3, 4, 5, 6];
   @Output() onBothDiceSelected = new EventEmitter<string>();
+  public numbers = [1, 2, 3, 4, 5, 6];
   public firstDieValue: number;
   public secondDieValue: number;
 

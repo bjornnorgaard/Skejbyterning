@@ -8,4 +8,5 @@ import { environment } from '../../../environments/environment';
 })
 export class GameComponent {
   gameTitle: string = environment.gameTitle;
+
 }
