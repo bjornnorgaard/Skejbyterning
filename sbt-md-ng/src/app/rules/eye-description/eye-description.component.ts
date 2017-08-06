@@ -24,10 +24,6 @@ export class EyeDescriptionComponent {
     const combination = this.sort(this.die1, this.die2);
     console.log('Fetching description for : ' + combination);
 
-    console.log('selection: ' + selection[0]);
-    console.log('selection: ' + selection[1]);
-    console.log('combination: ' + combination);
-
     this.items = this.database
       .list('/rule/' + combination, {
         query: {
@@ -35,28 +31,31 @@ export class EyeDescriptionComponent {
         }
       });
 
-    console.log(this.die1 + ' ' + this.die2 + ' hello');
-
-    // this.send();
+    // this.send(combination);
   }
 
   // For debugging only
   // noinspection JSUnusedGlobalSymbols
-  send() {
+  send(combination: string) {
     const thing = {
-      title: 'title' + this.die1 + this.die2,
-      subtitle: 'subtitle' + this.die1 + this.die2,
+      title: 'Regl for: ' + combination,
+      subtitle: 'Undertitle for regel ' + combination,
       image: '../../../assets/dice1.jpg',
       content: [
-        'one' + this.die1 + this.die2,
-        'two' + this.die1 + this.die2,
-        'three' + this.die1 + this.die2,
+        'Beskrivelse afsnit 1 for ' + combination + ' kombinationen.',
+        'Afsnit nummer 2.',
       ],
     };
     this.items.push({card: thing});
   }
 
-  sort(die1: number, die2: number): number {
-    return die1 + die2;
+  sort(die1: number, die2: number): string {
+    if (this.die1 < this.die2) {
+      return die1 + '' + die2;
+    }
+    if (this.die1 > this.die2) {
+      return die2 + '' + die1;
+    }
+    return die1 + '' + die2;
   }
 }
