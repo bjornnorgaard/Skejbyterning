@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:1.13.3
 
 MAINTAINER Bjørn Nørgaard
 
