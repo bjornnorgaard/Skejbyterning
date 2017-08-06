@@ -5,6 +5,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import 'hammerjs';
+import { environment } from '../environments/environment';
 import { AboutModule } from './about/about.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +14,6 @@ import { AppComponent } from './app.component';
 import { GameModule } from './game/game.module';
 import { MyMaterialModule } from './my-material/my-material.module';
 import { RulesModule } from './rules/rules.module';
-import { environment } from '../environments/environment';
 
 export const firebaseConfig = {
   apiKey: environment.apiKey,
