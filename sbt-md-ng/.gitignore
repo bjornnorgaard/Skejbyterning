@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Configuration file
-very.secret.file.json
+very-secret-file.json
