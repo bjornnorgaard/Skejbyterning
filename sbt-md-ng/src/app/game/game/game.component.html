@@ -5,6 +5,7 @@
   </md-card-title-group>
   <md-card-content>
     When I get this working the name should be displayed right here: {{name}}.
+    <p *ngFor="let item of items | async">{{item.message}}</p>
   </md-card-content>
 </md-card>
 
