@@ -1,0 +1,251 @@
+{
+  "about" : [ 
+    {
+      "card" :
+      {
+        "title" : "Skejbyterninger",
+        "subtitle" : "Generel forklaring",
+        "image" : "http://placebear.com/400/200",
+        "content" : [ "Der var engang Lorem Ipsum is simply text of the printing and industry. Lorem Ipsum has the industry's standard dummy ever since the 1500s, when an unknown took a galley of type and scrambled it to make a type specimen book.", "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." ]
+      }
+    },
+    {
+      "card" : 
+      {
+        "title" : "En sjov detalje",
+        "subtitle" : "Endnu en underoverskrift",
+        "content" : [ "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" ]
+      }
+    } 
+  ],
+  "game" : [
+    {
+      "card" :
+      {
+        "title" : "Skejbyterninger",
+        "subtitle" : "Generel forklaring",
+        "content" : [ "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", "when an unknown printer took a galley of type and scrambled it to make a type specimen book." ]
+      }
+    }, 
+    {
+      "card" :
+      {
+        "title" : "Regler",
+        "subtitle" : "Some subtitle",
+        "content" : [ "Lorem Ipsum is simply dummy.", "Text of the printing and typesetting industry.", "Lorem is dummy text the and typesetting." ]
+      }
+    } 
+  ],
+  "rule" : {
+    "11" : {
+      "-KqsBMoCy_P4mL5bZ3J2" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 11 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 11",
+          "title" : "Regl for: 11"
+        }
+      }
+    },
+    "12" : {
+      "-KqsBN4fIhinPxzOh-zt" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 12 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 12",
+          "title" : "Regl for: 12"
+        }
+      }
+    },
+    "13" : {
+      "-KqsBNB554-wYViYdsKJ" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 13 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 13",
+          "title" : "Regl for: 13"
+        }
+      }
+    },
+    "14" : {
+      "-KqsBNGxEc8SHzHNJlvp" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 14 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 14",
+          "title" : "Regl for: 14"
+        }
+      }
+    },
+    "15" : {
+      "-KqsBNPFw-zgJhQqGf5N" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 15 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 15",
+          "title" : "Regl for: 15"
+        }
+      }
+    },
+    "16" : {
+      "-KqsBNV1C-985i0fxkSl" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 16 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 16",
+          "title" : "Regl for: 16"
+        }
+      }
+    },
+    "22" : {
+      "-KqsBNqyZpVXQZ38oD4B" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 22 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 22",
+          "title" : "Regl for: 22"
+        }
+      }
+    },
+    "23" : {
+      "-KqsBNwy7PgL83t_ay4H" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 23 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 23",
+          "title" : "Regl for: 23"
+        }
+      }
+    },
+    "24" : {
+      "-KqsBO1v6rdbYRmdN6a9" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 24 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 24",
+          "title" : "Regl for: 24"
+        }
+      }
+    },
+    "25" : {
+      "-KqsBO7tIny3LyISw1g3" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 25 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 25",
+          "title" : "Regl for: 25"
+        }
+      }
+    },
+    "26" : {
+      "-KqsBNkh-TsOorypkUTo" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 26 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 26",
+          "title" : "Regl for: 26"
+        }
+      }
+    },
+    "33" : {
+      "-KqsBONkw4YisXGnx8-5" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 33 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 33",
+          "title" : "Regl for: 33"
+        }
+      }
+    },
+    "34" : {
+      "-KqsBOT_ifcxCM4cruS_" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 34 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 34",
+          "title" : "Regl for: 34"
+        }
+      }
+    },
+    "35" : {
+      "-KqsBOHPPsJcgPxC2zjD" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 35 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 35",
+          "title" : "Regl for: 35"
+        }
+      }
+    },
+    "36" : {
+      "-KqsBOZqIZmXvw3Ute-Q" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 36 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 36",
+          "title" : "Regl for: 36"
+        }
+      }
+    },
+    "44" : {
+      "-KqsBP6AQ3p0KrGpuW4m" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 44 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 44",
+          "title" : "Regl for: 44"
+        }
+      }
+    },
+    "45" : {
+      "-KqsBPBdZk1QZaH3wjVO" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 45 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 45",
+          "title" : "Regl for: 45"
+        }
+      }
+    },
+    "46" : {
+      "-KqsBOgDnhnQ7L3vJWdG" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 46 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 46",
+          "title" : "Regl for: 46"
+        }
+      }
+    },
+    "55" : {
+      "-KqsBPIIJeJKrLHXt3-t" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 55 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 55",
+          "title" : "Regl for: 55"
+        }
+      }
+    },
+    "56" : {
+      "-KqsBPU-DgC3XSswUpkZ" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 56 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 56",
+          "title" : "Regl for: 56"
+        }
+      }
+    },
+    "66" : {
+      "-KqsBPYZiVLTY84NiHpx" : {
+        "card" : {
+          "content" : [ "Beskrivelse afsnit 1 for 66 kombinationen.", "Afsnit nummer 2." ],
+          "image" : "../../../assets/dice1.jpg",
+          "subtitle" : "Undertitle for regel 66",
+          "title" : "Regl for: 66"
+        }
+      }
+    }
+  }
+}
