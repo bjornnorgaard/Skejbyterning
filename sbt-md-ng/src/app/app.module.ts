@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 import 'hammerjs';
 import json from '../../very-secret-file.json';
@@ -35,6 +36,9 @@ export const firebaseConfig = {
     GameModule,
     RulesModule,
     AboutModule,
+  ],
+  providers: [
+    AngularFireDatabase,
   ],
   bootstrap: [AppComponent]
 })
