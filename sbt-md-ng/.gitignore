@@ -42,8 +42,8 @@ testem.log
 Thumbs.db
 
 # Environment files
-src/environment.prod.ts
-src/environment.ts
+src/environments/environment.prod.ts
+src/environments/environment.ts
 
 # Dist folder
 src/app/dist/**
