@@ -1,26 +1,14 @@
-<md-card>
-  <md-card-title-group>
-    <md-card-title>Oprindelsen</md-card-title>
-    <md-card-subtitle>Det essentielle</md-card-subtitle>
-  </md-card-title-group>
-  <img md-card-image class="cropped-image" src="http://placebear.com/400/200">
-  <md-card-content>
-    <p>Der var engang Lorem Ipsum is simply text of the printing and industry.
-       Lorem Ipsum has the industry's standard dummy ever since the 1500s,
-       when an unknown took a galley of type and scrambled it to make a type specimen book. </p>
-    <p>It has survived not only five centuries, but also the leap into electronic typesetting,
-       remaining essentially unchanged.</p>
-  </md-card-content>
-</md-card>
-
-<md-card>
-  <md-card-title-group>
-    <md-card-title>En sjov detalje</md-card-title>
-    <md-card-subtitle>Endnu en underoverskrift</md-card-subtitle>
-  </md-card-title-group>
-  <md-card-content>
-    <p>It was popularised in the 1960s with the release of
-       Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-       software like Aldus PageMaker including versions of Lorem Ipsum</p>
-  </md-card-content>
-</md-card>
+<div *ngFor="let item of items | async ">
+  <md-card>
+    <md-card-title-group>
+      <md-card-title>{{item.card.title}}</md-card-title>
+      <md-card-subtitle>{{item.card.subtitle}}</md-card-subtitle>
+    </md-card-title-group>
+    <img *ngIf="item.card.image" md-card-image class="cropped-image small" [src]=item.card.image>
+    <md-card-content>
+      <p *ngFor="let content of item.card.content">
+        {{content}}
+      </p>
+    </md-card-content>
+  </md-card>
+</div>

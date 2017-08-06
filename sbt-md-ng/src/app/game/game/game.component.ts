@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-game',
@@ -9,24 +7,29 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent {
-  gameTitle: string = environment.gameTitle;
-  name: string;
-
   items: FirebaseListObservable<any[]>;
 
-  constructor(private af: AngularFireDatabase) {
-    this.name = 'No Name';
-
-    this.items = af.list('/messages', {
+  constructor(private database: AngularFireDatabase) {
+    this.items = database.list('/game', {
       query: {
         limitToLast: 50
       }
     });
-
-    this.Send('Hello World!');
   }
 
-  Send(desc: string) {
-    this.items.push({message: desc});
+  // For debugging only
+  // noinspection JSUnusedGlobalSymbols
+  send() {
+    const thing = {
+      title: 'This is the title',
+      subtitle: 'Some subtitle',
+      image: '../../../assets/dice-cover3.jpg',
+      content: [
+        'one',
+        'two',
+        'three',
+      ],
+    };
+    this.items.push({card: thing});
   }
 }

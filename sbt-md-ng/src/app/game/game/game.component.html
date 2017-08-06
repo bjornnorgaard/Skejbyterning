@@ -1,54 +1,14 @@
-<md-card>
-  <md-card-title-group>
-    <md-card-title>Firebase</md-card-title>
-    <md-card-subtitle>Getting from database</md-card-subtitle>
-  </md-card-title-group>
-  <md-card-content>
-    When I get this working the name should be displayed right here: {{name}}.
-    <p *ngFor="let item of items | async">{{item.message}}</p>
-  </md-card-content>
-</md-card>
-
-<md-card>
-  <md-card-title-group>
-    <md-card-title>{{gameTitle}}</md-card-title>
-    <md-card-subtitle>Generel forklaring</md-card-subtitle>
-  </md-card-title-group>
-  <img md-card-image class="cropped-image" src="http://placebear.com/400/400">
-  <md-card-content>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type
-      specimen book.
-    </p>
-  </md-card-content>
-</md-card>
-
-<md-card>
-  <md-card-title-group>
-    <md-card-title>Regler</md-card-title>
-    <md-card-subtitle>Vælg herunder et antal øjne for at få en forklaring</md-card-subtitle>
-    <i class="fa fa-balance-scale fa-3x"></i>
-  </md-card-title-group>
-  <md-card-content>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  </md-card-content>
-</md-card>
-
-<md-card>
-  <md-card-title-group>
-    <md-card-title>Anden overskrift</md-card-title>
-    <md-card-subtitle>En underoverskrift</md-card-subtitle>
-  </md-card-title-group>
-  <img md-card-image class="cropped-image small" src="http://placebear.com/420/410">
-  <md-card-content>
-    <p>
-      It has survived not only five centuries, but also the leap
-      into electronic typesetting, remaining essentially unchanged. It was
-      popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software
-      like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-  </md-card-content>
-</md-card>
+<div *ngFor="let item of items | async ">
+  <md-card>
+    <md-card-title-group>
+      <md-card-title>{{item.card.title}}</md-card-title>
+      <md-card-subtitle>{{item.card.subtitle}}</md-card-subtitle>
+    </md-card-title-group>
+    <img *ngIf="item.card.image" md-card-image class="cropped-image small" [src]=item.card.image>
+    <md-card-content>
+      <p *ngFor="let content of item.card.content">
+        {{content}}
+      </p>
+    </md-card-content>
+  </md-card>
+</div>

@@ -1,17 +1,36 @@
-import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment';
+import { Component } from '@angular/core';
+import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
-  gameTitle: string = environment.gameTitle;
+export class AboutComponent {
+  items: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
 
-  ngOnInit() {
+    this.items = database.list('/about', {
+      query: {
+        limitToLast: 50
+      }
+    });
   }
 
+  // For debugging only
+  // noinspection JSUnusedGlobalSymbols
+  send() {
+    const thing = {
+      title: 'This is the title',
+      subtitle: 'Some subtitle',
+      image: '../../../assets/dice-cover3.jpg',
+      content: [
+        'one',
+        'two',
+        'three',
+      ],
+    };
+    this.items.push({card: thing});
+  }
 }
