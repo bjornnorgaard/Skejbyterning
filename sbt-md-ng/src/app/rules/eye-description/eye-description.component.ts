@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MdDialog } from '@angular/material';
-import { DialogComponent } from '../dialog/dialog.component';
+import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-eye-description',
@@ -9,35 +9,54 @@ import { DialogComponent } from '../dialog/dialog.component';
 })
 export class EyeDescriptionComponent {
 
-  isOn = true;
   die1: number;
   die2: number;
 
-  constructor(public dialog: MdDialog) {
+  items: FirebaseListObservable<any[]>;
+
+  constructor(public dialog: MdDialog, private database: AngularFireDatabase) {
   }
 
   findDiceDescription(selection: string) {
-    console.log('Fetching description for : ' + selection);
-
-    this.isOn = true;
     this.die1 = +selection[0];
     this.die2 = +selection[1];
 
-    if (this.die1 === 6 && this.die2 === 6) {
-      const dialogRef = this.dialog.open(DialogComponent);
-      dialogRef.componentInstance.textToShow = 'Vælg en som skal tømme sin øl';
-    }
-    if (this.die1 === 1 && this.die2 === 1) {
-      const dialogRef = this.dialog.open(DialogComponent);
-      dialogRef.componentInstance.textToShow = 'DU skal tømme din øl';
-    }
-    if (this.die1 === 1 && this.die2 === 3) {
-      const dialogRef = this.dialog.open(DialogComponent);
-      dialogRef.componentInstance.textToShow = 'UNLUCKY NUMBER';
-    }
-    if (this.die1 === 3 && this.die2 === 4) {
-      const dialogRef = this.dialog.open(DialogComponent);
-      dialogRef.componentInstance.textToShow = 'DEEP WATER SOLO YOLO';
-    }
+    const combination = this.sort(this.die1, this.die2);
+    console.log('Fetching description for : ' + combination);
+
+    console.log('selection: ' + selection[0]);
+    console.log('selection: ' + selection[1]);
+    console.log('combination: ' + combination);
+
+    this.items = this.database
+      .list('/rule/' + combination, {
+        query: {
+          limitToLast: 50
+        }
+      });
+
+    console.log(this.die1 + ' ' + this.die2 + ' hello');
+
+    // this.send();
+  }
+
+  // For debugging only
+  // noinspection JSUnusedGlobalSymbols
+  send() {
+    const thing = {
+      title: 'title' + this.die1 + this.die2,
+      subtitle: 'subtitle' + this.die1 + this.die2,
+      image: '../../../assets/dice1.jpg',
+      content: [
+        'one' + this.die1 + this.die2,
+        'two' + this.die1 + this.die2,
+        'three' + this.die1 + this.die2,
+      ],
+    };
+    this.items.push({card: thing});
+  }
+
+  sort(die1: number, die2: number): number {
+    return die1 + die2;
   }
 }

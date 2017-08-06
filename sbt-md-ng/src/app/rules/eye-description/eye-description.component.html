@@ -1,16 +1,16 @@
-<div [hidden]="!isOn">
+<div *ngFor="let item of items | async ">
   <md-card>
     <md-card-title-group>
 
       <md-card-title>
         <div *ngIf="die1; then titleThen else titleElse"></div>
-        <ng-template #titleThen>Forklaring af slag: {{die1}} x {{die2}}</ng-template>
+        <ng-template #titleThen>{{item.card.title}} {{die1}} x {{die2}}</ng-template>
         <ng-template #titleElse>Vælg antal øjne overfor</ng-template>
       </md-card-title>
 
       <md-card-subtitle>
         <div *ngIf="die1; then thenBlock else elseBlock">hello</div>
-        <ng-template #thenBlock>Her vises betydningen</ng-template>
+        <ng-template #thenBlock>{{item.card.subtitle}}</ng-template>
         <ng-template #elseBlock>Næsten klar, bare vælg antal øjne</ng-template>
       </md-card-subtitle>
 
@@ -20,9 +20,9 @@
 
       <div *ngIf="die1; then paraThen else paraElse"></div>
       <ng-template #paraThen>
-        Her skal der være en form for beskrivelse.
-        "Dette slag betyder x, y og z." Endnu uklart på
-        hvilket format og hvilke felter der bliver nødvendige
+        <p *ngFor="let content of item.card.content">
+          {{content}}
+        </p>
       </ng-template>
       <ng-template #paraElse>
         Forklaringen kommer her når der er valgt et antal øjne på feltet ovenfor.
