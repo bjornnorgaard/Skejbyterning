@@ -41,5 +41,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Configuration file
-secret.json
+# Environment files
+src/environment.prod.ts
+src/environment.ts
+
+# Dist folder
+src/app/dist/**
