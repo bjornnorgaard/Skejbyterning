@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import * as firebase from 'firebase/app';
+import { Observable } from 'rxjs/Observable';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -10,7 +14,17 @@ export class GameComponent {
   gameTitle: string = environment.gameTitle;
   name: string;
 
-  constructor() {
+  user: Observable<firebase.User>;
+  items: FirebaseListObservable<any[]>;
+  msgVal: string = '';
+
+  constructor(private af: AngularFireDatabase) {
     this.name = 'No Name';
+
+    this.items = af.list('/messages', {
+      query: {
+        limitToLast: 50
+      }
+    });
   }
 }
