@@ -1,20 +1,10 @@
-<md-toolbar color="accent">
-  <a md-button routerLink="/"><i class="fa fa-beer fa-2x"></i></a>
-  <a md-button routerLink="/" routerLinkActive="active">Velkommen</a>
-  <a md-button routerLink="/" routerLinkActive="active">Spillet</a>
-  <a md-button routerLink="/" routerLinkActive="active">Om</a>
+<md-toolbar color="primary" class="navbar">
+  <a md-button routerLink="/welcome"><i class="fa fa-beer fa-2x"></i></a>
+  <a md-button routerLink="/welcome" routerLinkActive="active">Velkommen</a>
+  <a md-button routerLink="/game" routerLinkActive="active">Spillet</a>
+  <a md-button routerLink="/about" routerLinkActive="active">Om</a>
 </md-toolbar>
 
-<md-card>
-  <md-card-title-group>
-    <md-card-title>Title</md-card-title>
-    <md-card-subtitle>Subtitle</md-card-subtitle>
-  </md-card-title-group>
-  <md-card-content>
-    <p>
-      Some content
-    </p>
-  </md-card-content>
-</md-card>
-
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
