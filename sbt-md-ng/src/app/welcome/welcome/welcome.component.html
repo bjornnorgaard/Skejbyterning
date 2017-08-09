@@ -1,3 +1,14 @@
-<p>
-  welcome works!
-</p>
+<div *ngFor="let item of items | async ">
+  <md-card>
+    <md-card-title-group>
+      <md-card-title>{{item.card.title}}</md-card-title>
+      <md-card-subtitle>{{item.card.subtitle}}</md-card-subtitle>
+    </md-card-title-group>
+    <img *ngIf="item.card.image" md-card-image class="cropped-image small" [src]=item.card.image>
+    <md-card-content>
+      <p *ngFor="let content of item.card.content">
+        {{content}}
+      </p>
+    </md-card-content>
+  </md-card>
+</div>
