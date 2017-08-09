@@ -20,9 +20,6 @@ import { WelcomeModule } from './welcome/welcome.module';
     GameModule,
     AboutModule,
   ],
-  exports: [
-    MyMaterialModule,
-  ],
   providers: [],
   bootstrap: [AppComponent]
 })
