@@ -9,7 +9,7 @@
       <md-radio-button *ngFor="let number of numbers"
                        [value]="number"
                        (click)="firstDieSelected(number)">
-        {{number}}&nbsp;&nbsp;&nbsp;&nbsp;
+        {{number}}&nbsp;&nbsp;
       </md-radio-button>
     </md-radio-group>
     <p>Anden terning:&nbsp;{{secondDieValue}}</p>
@@ -17,10 +17,8 @@
       <md-radio-button *ngFor="let number of numbers"
                        [value]="number"
                        (click)="secondDieSelected(number)">
-        {{number}}&nbsp;&nbsp;&nbsp;&nbsp;
+        {{number}}&nbsp;&nbsp;
       </md-radio-button>
     </md-radio-group>
   </md-card-content>
 </md-card>
-
-
