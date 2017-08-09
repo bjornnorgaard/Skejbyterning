@@ -4,7 +4,7 @@
 
       <md-card-title>
         <div *ngIf="die1; then titleThen else titleElse"></div>
-        <ng-template #titleThen>{{item.card.title}} {{die1}} x {{die2}}</ng-template>
+        <ng-template #titleThen>{{item.card.title}}</ng-template>
         <ng-template #titleElse>Vælg antal øjne overfor</ng-template>
       </md-card-title>
 

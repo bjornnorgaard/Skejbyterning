@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { GameModule } from './game/game.module';
 import { MyMaterialModule } from './my-material/my-material.module';
 import { RulesModule } from './rules/rules.module';
+import { WelcomeModule } from './welcome/welcome.module';
 
 export const firebaseConfig = {
   apiKey: environment.apiKey,
@@ -34,6 +35,7 @@ export const firebaseConfig = {
     MyMaterialModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
+    WelcomeModule,
     GameModule,
     RulesModule,
     AboutModule,
