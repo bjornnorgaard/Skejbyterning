@@ -40,7 +40,7 @@ export class EyeDescriptionComponent {
     const thing = {
       title: 'Regl for: ' + combination,
       subtitle: 'Undertitle for regel ' + combination,
-      image: '../../../assets/dice1.jpg',
+      image: '../../../assets/dice.jpg',
       content: [
         'Beskrivelse afsnit 1 for ' + combination + ' kombinationen.',
         'Afsnit nummer 2.',

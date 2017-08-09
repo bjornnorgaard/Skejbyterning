@@ -23,7 +23,7 @@ export class GameComponent {
     const thing = {
       title: 'This is the title',
       subtitle: 'Some subtitle',
-      image: '../../../assets/dice-cover3.jpg',
+      image: '../../../assets/dice.jpg',
       content: [
         'one',
         'two',
