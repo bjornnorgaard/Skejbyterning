@@ -1,16 +1,8 @@
-<md-tab-group>
-  <md-tab label="Velkommen">
-    <h1>Some tab content</h1>
-    <p>...</p>
-  </md-tab>
-  <md-tab label="Spillet">
-    <h1>Some more tab content</h1>
-    <p>...</p>
-  </md-tab>
-  <md-tab label="Om">
-    <h1>Some more tab content</h1>
-    <p>...</p>
-  </md-tab>
-</md-tab-group>
+<md-toolbar color="accent" class="navbar">
+  <a md-button routerLink="/"><i class="fa fa-beer fa-2x"></i></a>
+  <a md-button routerLink="/">Spillet</a>
+  <a md-button routerLink="/">Kontakt</a>
+  <a md-button routerLink="/">Om</a>
+</md-toolbar>
 
 <router-outlet></router-outlet>
