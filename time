@@ -18,3 +18,16 @@ Mangler in-memory api til at hente beskrivelse for at undgå bloatet .ts fil.
 Indbygget mulighed for at lade nogle kombinationer åbne
 en modal dialog med besked.
 Generelle forbedringer.
+
+20170806
+5timer 40min
+Firebase og nginx opsætning
+Nu kan kort til /game og /about hentes dynamisk fra firebase
+
+20170809
+2timer
+Nyt retning for projekt.
+Eksperimenteret med materialize som css framework.
+
+20700810
+12.00-
