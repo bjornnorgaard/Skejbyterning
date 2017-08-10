@@ -4,4 +4,10 @@
 body{
   background-color: whitesmoke;
   margin: 0;
+
+  .mat-tab-labels {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00B8D4;
+  }
 }
