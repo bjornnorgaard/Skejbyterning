@@ -6,12 +6,12 @@ import { RulesComponent } from './rules/rules/rules.component';
 import { WelcomeComponent } from './welcome/welcome/welcome.component';
 
 const routes: Routes = [
-  {path: '', component: GameComponent},
+  {path: '', component: WelcomeComponent},
   {path: 'welcome', component: WelcomeComponent},
   {path: 'game', component: GameComponent},
   {path: 'rules', component: RulesComponent},
   {path: 'about', component: AboutComponent},
-  {path: '**', component: GameComponent},
+  {path: '**', component: WelcomeComponent},
 ];
 
 @NgModule({
