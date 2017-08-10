@@ -1,14 +1,24 @@
-<div *ngFor="let item of items | async ">
-  <md-card>
-    <md-card-title-group>
-      <md-card-title>{{item.card.title}}</md-card-title>
-      <md-card-subtitle>{{item.card.subtitle}}</md-card-subtitle>
-    </md-card-title-group>
-    <img *ngIf="item.card.image" md-card-image class="cropped-image small" [src]=item.card.image>
-    <md-card-content>
-      <p *ngFor="let content of item.card.content">
-        {{content}}
-      </p>
-    </md-card-content>
-  </md-card>
-</div>
+<md-card>
+  <md-card-title-group>
+    <md-card-title>Lad os komme i gang!</md-card-title>
+  </md-card-title-group>
+  <md-card-content>
+    <p> Hvor mange spillere er I?</p>
+    <md-radio-group>
+      <md-radio-button *ngFor="let number of numbers"
+                       [value]="number"
+                       (click)="numberOfPlayersSelected(number)">
+        {{number}}&nbsp;&nbsp;
+      </md-radio-button>
+    </md-radio-group>
+  </md-card-content>
+
+  <md-card-actions style="text-align: right;">
+    <button md-raised-button
+            color="accent"
+            style="margin-right: 1em; margin-bottom: 0.3em;"
+            (click)="okButtonClicked()">Ok
+    </button>
+  </md-card-actions>
+
+</md-card>
