@@ -10,7 +10,7 @@ import {
   MdToolbarModule,
   MdRadioModule,
   MdListModule,
-  MdDialogModule
+  MdDialogModule, MdTabsModule
 } from '@angular/material';
 
 @NgModule({
@@ -26,6 +26,7 @@ import {
     MdToolbarModule,
     MdRadioModule,
     MdListModule,
+    MdTabsModule,
     MdDialogModule,
   ],
   providers: [],
