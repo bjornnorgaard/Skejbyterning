@@ -1,16 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss']
 })
-export class WelcomeComponent implements OnInit {
+export class WelcomeComponent {
+  items: FirebaseListObservable<any[]>;
 
-  constructor() {
+  constructor(private database: AngularFireDatabase) {
+    this.items = database.list('/welcome', {
+      query: {
+        limitToLast: 50
+      }
+    });
   }
 
-  ngOnInit() {
+  // For debugging only
+  // noinspection JSUnusedGlobalSymbols
+  send() {
+    const thing = {
+      title: 'This is the title',
+      subtitle: 'Some subtitle',
+      image: '../../../assets/dice.jpg',
+      content: [
+        'one',
+        'two',
+        'three',
+      ],
+    };
+    this.items.push({card: thing});
   }
-
 }

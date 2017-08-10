@@ -1,11 +1,10 @@
 <md-card>
-  <img md-card-image class="cropped-image small" src="../../../assets/dice.jpg">
   <md-card-title-group>
     <md-card-title>Vælg antal øjne</md-card-title>
   </md-card-title-group>
   <md-card-content>
     <p>Første terning:&nbsp;{{firstDieValue}}</p>
-    <md-radio-group class="example-radio-group">
+    <md-radio-group>
       <md-radio-button *ngFor="let number of numbers"
                        [value]="number"
                        (click)="firstDieSelected(number)">
