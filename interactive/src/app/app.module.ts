@@ -4,7 +4,14 @@ import 'hammerjs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdCardModule, MdButtonModule, MdToolbarModule, MdRadioModule, MdListModule, MdDialogModule } from '@angular/material';
+import {
+  MdCardModule,
+  MdButtonModule,
+  MdToolbarModule,
+  MdRadioModule,
+  MdListModule,
+  MdDialogModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,4 +31,5 @@ import { MdCardModule, MdButtonModule, MdToolbarModule, MdRadioModule, MdListMod
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
