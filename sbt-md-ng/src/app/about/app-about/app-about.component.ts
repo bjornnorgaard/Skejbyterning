@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: 'app-app-about',
+  templateUrl: './app-about.component.html',
+  styleUrls: ['./app-about.component.scss']
 })
-export class AboutComponent {
+export class AppAboutComponent {
+
   items: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
@@ -33,4 +34,5 @@ export class AboutComponent {
     };
     this.items.push({card: thing});
   }
+
 }

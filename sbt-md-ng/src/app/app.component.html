@@ -1,10 +1,33 @@
-<md-toolbar color="primary" class="navbar">
+<md-toolbar color="primary" class="navbar-mobile">
   <a md-button routerLink="/"><i class="fa fa-beer fa-2x"></i></a>
   <a md-button routerLink="/welcome" routerLinkActive="active">Hjem</a>
   <a md-button routerLink="/game" routerLinkActive="active">Spillet</a>
   <a md-button routerLink="/about" routerLinkActive="active">Om</a>
 </md-toolbar>
 
-<div class="content">
+<div class="content-mobile">
   <router-outlet></router-outlet>
+</div>
+
+<md-toolbar color="accent" class="navbar-desktop">
+  <a md-button routerLink="/"><i class="fa fa-beer fa-2x"></i></a>
+  <a md-button routerLink="/welcome" routerLinkActive="active">Hjem</a>
+  <a md-button routerLink="/game" routerLinkActive="active">Spillet</a>
+  <a md-button routerLink="/about" routerLinkActive="active">Om</a>
+</md-toolbar>
+
+<div class="content-desktop">
+
+  <div class="welcome">
+    <app-app-welcome></app-app-welcome>
+  </div>
+
+  <div class="game">
+    <app-app-game></app-app-game>
+  </div>
+
+  <div class="about">
+
+  </div>
+
 </div>

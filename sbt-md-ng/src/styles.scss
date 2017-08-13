@@ -2,16 +2,9 @@
 @import "~font-awesome/css/font-awesome.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-$margin-side: 1em;
-$margin-top: 4.5em;
-
 body {
   margin: 0;
   background-color: whitesmoke;
-}
-
-.content {
-  margin: $margin-top $margin-side $margin-side;
 }
 
 md-card {

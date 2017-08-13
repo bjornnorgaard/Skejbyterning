@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MyMaterialModule } from '../my-material/my-material.module';
-import { AboutComponent } from './about/about.component';
+import { AppAboutComponent } from './app-about/app-about.component';
 
 @NgModule({
   imports: [
@@ -9,11 +9,12 @@ import { AboutComponent } from './about/about.component';
     MyMaterialModule,
   ],
   declarations: [
-    AboutComponent
+    AppAboutComponent
   ],
   exports: [
-    AboutComponent,
+    AppAboutComponent,
   ]
 })
 export class AboutModule {
 }
+
