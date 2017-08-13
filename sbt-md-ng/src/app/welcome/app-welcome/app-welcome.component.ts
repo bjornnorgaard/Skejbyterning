@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.scss']
+  selector: 'app-app-welcome',
+  templateUrl: './app-welcome.component.html',
+  styleUrls: ['./app-welcome.component.scss']
 })
-export class WelcomeComponent {
+export class AppWelcomeComponent {
+
   items: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {

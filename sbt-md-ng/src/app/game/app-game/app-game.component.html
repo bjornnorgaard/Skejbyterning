@@ -4,7 +4,7 @@
   </md-card-title-group>
   <md-card-content>
     <p> Hvor mange spillere er I?</p>
-    <md-radio-group>
+    <md-radio-group style="display: flex; justify-content: center">
       <md-radio-button *ngFor="let number of numbers"
                        [value]="number"
                        (click)="numberOfPlayersSelected(number)">
@@ -20,5 +20,4 @@
             (click)="okButtonClicked()">Ok
     </button>
   </md-card-actions>
-
 </md-card>

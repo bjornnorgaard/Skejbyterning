@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-game',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss']
+  selector: 'app-app-game',
+  templateUrl: './app-game.component.html',
+  styleUrls: ['./app-game.component.scss']
 })
-export class GameComponent {
+export class AppGameComponent {
 
   items: FirebaseListObservable<any[]>;
   public numbers = [2, 3, 4, 5, 6];
@@ -41,7 +41,7 @@ export class GameComponent {
   }
 
   okButtonClicked() {
-    if (!this.players){
+    if (!this.players) {
       return;
     }
   }

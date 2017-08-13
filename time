@@ -18,3 +18,7 @@ Mangler in-memory api til at hente beskrivelse for at undgå bloatet .ts fil.
 Indbygget mulighed for at lade nogle kombinationer åbne
 en modal dialog med besked.
 Generelle forbedringer.
+
+20170810
+2timer
+Undersøgning af css grid.
