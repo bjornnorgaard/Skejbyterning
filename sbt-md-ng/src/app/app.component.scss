@@ -87,6 +87,7 @@ $breakpoint-large-desktop: 1400px;
 @media (min-width: $breakpoint-desktop) {
 
   .content {
+    margin-top: 6em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "welcome game about";
