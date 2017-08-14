@@ -4,7 +4,11 @@ $margin-top-mobile: 4.5em;
 $navigation-bar-height: 2em;
 $navigation-bar-offset: 4em;
 
-.navbar-mobile {
+$breakpoint-tablet: 500px;
+$breakpoint-desktop: 1000px;
+$breakpoint-large-desktop: 1400px;
+
+.navbar {
   position: fixed;
   left: 0;
   top: 0;
@@ -21,10 +25,84 @@ $navigation-bar-offset: 4em;
   }
 }
 
-.content-mobile {
-  margin: $navigation-bar-offset $margin-side-mobile $margin-side-mobile;
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  #navbar-mobile {
+    display: block;
+  }
+
+  #navbar-mobile {
+    display: block;
+  }
+
+  .content-mobile {
+    display: block;
+    margin: $navigation-bar-offset $margin-side-mobile $margin-side-mobile;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .content {
+    display: none;
+  }
 }
 
-.content-desktop {
-  margin: 1em $margin-side-mobile $margin-side-mobile;
+// Tablet
+@media (min-width: $breakpoint-tablet) {
+
+  .content {
+    margin: ($navigation-bar-offset + 1em) $margin-side-mobile $margin-side-mobile;
+    display: grid;
+    grid-template-areas: "welcome welcome" "game about";
+    grid-gap: 1em;
+
+    .welcome {
+      grid-area: welcome;
+    }
+
+    .game {
+      grid-area: game;
+    }
+
+    .about {
+      grid-area: about;
+    }
+  }
+
+  #navbar-mobile {
+    display: none;
+  }
+  .content-mobile {
+    display: none;
+  }
+
+  #navbar {
+    display: block;
+  }
+}
+
+// Desktop
+@media (min-width: $breakpoint-desktop) {
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "welcome game about";
+  }
+}
+
+// Large desktop
+@media (min-width: $breakpoint-large-desktop) {
+
+  $large-desktop-side-margin: 10%;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "welcome game about";
+    margin-left: $large-desktop-side-margin;
+    margin-right: $large-desktop-side-margin;
+  }
 }

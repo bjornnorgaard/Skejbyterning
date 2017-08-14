@@ -1,4 +1,4 @@
-FROM nginx:1.13.3
+FROM nginx:1.13.3-alpine
 
 MAINTAINER Bjørn Nørgaard
 

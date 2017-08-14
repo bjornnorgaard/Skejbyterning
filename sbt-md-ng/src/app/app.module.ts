@@ -11,7 +11,6 @@ import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ContactModule } from './contact/contact.module';
 import { GameModule } from './game/game.module';
 import { MyMaterialModule } from './my-material/my-material.module';
 import { WelcomeModule } from './welcome/welcome.module';
@@ -38,7 +37,6 @@ export const firebaseConfig = {
     WelcomeModule,
     GameModule,
     AboutModule,
-    ContactModule,
   ],
   bootstrap: [AppComponent]
 })
