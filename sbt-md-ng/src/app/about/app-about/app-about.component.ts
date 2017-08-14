@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-game',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss']
+  selector: 'app-app-about',
+  templateUrl: './app-about.component.html',
+  styleUrls: ['./app-about.component.scss']
 })
-export class GameComponent {
+export class AppAboutComponent {
+
   items: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.items = database.list('/game', {
+
+    this.items = database.list('/about', {
       query: {
         limitToLast: 50
       }
@@ -32,4 +34,5 @@ export class GameComponent {
     };
     this.items.push({card: thing});
   }
+
 }

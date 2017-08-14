@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { MyMaterialModule } from '../my-material/my-material.module';
+import { AppWelcomeComponent } from './app-welcome/app-welcome.component';
 
 @NgModule({
   imports: [
@@ -9,11 +9,12 @@ import { MyMaterialModule } from '../my-material/my-material.module';
     MyMaterialModule,
   ],
   declarations: [
-    WelcomeComponent,
+    AppWelcomeComponent,
   ],
   exports: [
-    WelcomeComponent,
+    AppWelcomeComponent,
   ]
 })
 export class WelcomeModule {
 }
+

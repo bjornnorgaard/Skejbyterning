@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MyMaterialModule } from '../my-material/my-material.module';
-import { GameComponent } from './game/game.component';
+import { AppGameComponent } from './app-game/app-game.component';
 
 @NgModule({
   imports: [
@@ -9,10 +9,10 @@ import { GameComponent } from './game/game.component';
     MyMaterialModule,
   ],
   declarations: [
-    GameComponent,
+    AppGameComponent,
   ],
   exports: [
-    GameComponent,
+    AppGameComponent,
   ]
 })
 export class GameModule {

@@ -1,5 +1,10 @@
+$margin-side-mobile: 1em;
+$margin-top-mobile: 4.5em;
 
-.navbar {
+$navigation-bar-height: 2em;
+$navigation-bar-offset: 4em;
+
+.navbar-mobile {
   position: fixed;
   left: 0;
   top: 0;
@@ -7,10 +12,19 @@
   width: 100%;
   z-index: 1;
   box-shadow: 0 0 1em black;
+  height: $navigation-bar-height;
 
   a {
     &.active {
-      background-color: darken(#3f51b5, 15%);
+      background-color: darken(#3F51B5, 20%);
     }
   }
+}
+
+.content-mobile {
+  margin: $navigation-bar-offset $margin-side-mobile $margin-side-mobile;
+}
+
+.content-desktop {
+  margin: 1em $margin-side-mobile $margin-side-mobile;
 }
