@@ -32,5 +32,7 @@ Ideudvikling og undersøgelse af domæne.
 Flyttet server til billigere og bedre hosting.
 
 20170903
-4timer
-Refactor af responsiveness
+5timer
+Refactor af responsiveness.
+Oprettet C# solution til game engine for nemmere at lave et API til spillet
+som ikke skal gå igennem firebase.
