@@ -24,6 +24,5 @@ namespace Engine.Api.Controllers
         {
             return $"{id}";
         }
-        
     }
 }
