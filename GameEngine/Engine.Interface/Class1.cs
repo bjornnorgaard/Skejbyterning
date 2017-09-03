@@ -1,6 +1,6 @@
 ﻿namespace Engine.Interface
 {
-    public class Class1
+    public interface ISkejbyterning
     {
     }
 }

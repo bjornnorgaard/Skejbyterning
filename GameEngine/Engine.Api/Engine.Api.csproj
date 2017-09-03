@@ -16,4 +16,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Engine.Game\Engine.Game.csproj" />
+    <ProjectReference Include="..\Engine.Interface\Engine.Interface.csproj" />
+  </ItemGroup>
+
 </Project>
