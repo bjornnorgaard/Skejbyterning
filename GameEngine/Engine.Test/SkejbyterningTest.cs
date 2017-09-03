@@ -7,7 +7,7 @@ namespace Engine.Test
 {
     public class SkejbyterningTest
     {
-        private ISkejbyterning _uut;
+        private readonly ISkejbyterning _uut;
 
         public SkejbyterningTest()
         {
