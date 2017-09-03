@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Engine.Interface
+﻿namespace Engine.Interface
 {
     public class Class1
     {

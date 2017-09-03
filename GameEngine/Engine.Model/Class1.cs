@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Engine.Model
+﻿namespace Engine.Model
 {
     public class Class1
     {

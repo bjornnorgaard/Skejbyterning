@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Engine.Game
+﻿namespace Engine.Game
 {
     public class Class1
     {
